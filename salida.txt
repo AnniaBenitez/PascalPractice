@@ -1,0 +1,32 @@
+/*
+*Esta es una clase tribial, solo es utilizada para la
+* encriptacion y desencriptacion del contenido de un
+* archivo desde pascal
+*/
+public class test{
+    //Constructor de la clase
+    //recibe un string para su creacion
+    public test(String text){
+           this.texto= text;
+    
+
+    //metodo que se utiliza para setear la palabra con la
+    //que es inicializada el objeto
+    public void setText(String newText){
+        texto=newText;
+    
+
+    /*Meto que obtiene el texto del objeto*/
+    public String getText(){
+        return texto;
+    
+    //variable golbal  que es utilzada por el objeto
+    String texto;
+
+    /*Main de la clase donde se crea un objeto y se llama a sus metodos*/
+    public static void main(String []args){
+           test t = new test("Hola Mundo");
+           System.out.println("El objeto se creo con la palabra:\t" + t.getText()+"\n");
+           t.setText("Paradigmas de la Programacion");
+           System.out.println("El objeto se seteo con la palabra: \t" + t.getText());
+    
